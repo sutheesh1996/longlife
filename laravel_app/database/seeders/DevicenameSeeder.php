@@ -1,0 +1,59 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Devicename;
+use Illuminate\Database\Seeder;
+
+class DevicenameSeeder extends Seeder
+{
+
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $deviceIds = [
+            'LLC-1A2B3C4E', 'LLC-5F6G7H8I', 'LLC-9J0K1L2M', 'LLC-3N4O5P6Q',
+            'LLC-7R8S9T0U', 'LLC-1V2W3X4Y', 'LLC-5Z6A7B8C', 'LLC-9D0E1F2G',
+            'LLC-3H4I5J6K', 'LLC-7L8M9N0O', 'LLC-1P2Q3R4S', 'LLC-5T6U7V8W',
+            'LLC-9X0Y1Z2A', 'LLC-3B4C5D6E', 'LLC-7F8G9H0I', 'LLC-1J2K3L4M',
+            'LLC-5N6O7P8Q', 'LLC-9R0S1T2U', 'LLC-3V4W5X6Y', 'LLC-7Z8A9B0C',
+            'LLC-1D2E3F4G', 'LLC-5H6I7J8K', 'LLC-9L0M1N2O', 'LLC-3P4Q5R6S',
+            'LLC-7T8U9V0W', 'LLC-1X2Y3Z4A', 'LLC-5B6C7D8E', 'LLC-9F0G1H2I',
+            'LLC-3J4K5L6M', 'LLC-7N8O9P0Q', 'LLC-1R2S3T4U', 'LLC-5V6W7X8Y',
+            'LLC-9Z0A1B2C', 'LLC-3D4E5F6G', 'LLC-7H8I9J0K', 'LLC-1L2M3N4O',
+            'LLC-5P6Q7R8S', 'LLC-9T0U1V2W', 'LLC-3X4Y5Z6A', 'LLC-7B8C9D0E',
+            'LLC-1F2G3H4I', 'LLC-5J6K7L8M', 'LLC-9N0O1P2Q', 'LLC-3R4S5T6U',
+            'LLC-7V8W9X0Y', 'LLC-1Z2A3B4C', 'LLC-5D6E7F8G', 'LLC-9H0I1J2K',
+            'LLC-3L4M5N6O', 'LLC-7P8Q9R0S', 'LLC-1T2U3V4W', 'LLC-5X6Y7Z8A',
+            'LLC-9B0C1D2E', 'LLC-3F4G5H6I', 'LLC-7J8K9L0M', 'LLC-1N2O3P4Q',
+            'LLC-5R6S7T8U', 'LLC-9V0W1X2Y', 'LLC-3Z4A5B6C', 'LLC-7D8E9F0G',
+            'LLC-1H2I3J4K', 'LLC-5L6M7N8O', 'LLC-9P0Q1R2S', 'LLC-3T4U5V6W',
+            'LLC-7X8Y9Z0A', 'LLC-1B2C3D4E', 'LLC-5F6G7H8I', 'LLC-9J0K1L2M',
+            'LLC-3N4O5P6Q', 'LLC-7R8S9T0U', 'LLC-1V2W3X4Y', 'LLC-5Z6A7B8C',
+            'LLC-9D0E1F2G', 'LLC-3H4I5J6K', 'LLC-7L8M9N0O', 'LLC-1P2Q3R4S',
+            'LLC-5T6U7V8W', 'LLC-9X0Y1Z2A', 'LLC-3B4C5D6E', 'LLC-7F8G9H0I',
+            'LLC-1J2K3L4M', 'LLC-5N6O7P8Q', 'LLC-9R0S1T2U', 'LLC-3V4W5X6Y',
+            'LLC-7Z8A9B0C', 'LLC-1D2E3F4G', 'LLC-5H6I7J8K', 'LLC-9L0M1N2O',
+            'LLC-3P4Q5R6S', 'LLC-7T8U9V0W', 'LLC-1X2Y3Z4A', 'LLC-5B6C7D8E',
+            'LLC-9F0G1H2I', 'LLC-3J4K5L6M', 'LLC-7N8O9P0Q', 'LLC-1R2S3T4U',
+            'LLC-5V6W7X8Y', 'LLC-9Z0A1B2C', 'LLC-3D4E5F6G', 'LLC-7H8I9J0K',
+            'LLC-1L2M3N4O', 'LLC-5P6Q7R8S', 'LLC-9T0U1V2W', 'LLC-3X4Y5Z6A',
+            'LLC-7B8C9D0E', 'LLC-1F2G3H4I', 'LLC-5J6K7L8M', 'LLC-9N0O1P2Q',
+            'LLC-3R4S5T6U', 'LLC-7V8W9X0Y', 'LLC-1Z2A3B4C', 'LLC-5D6E7F8G',
+            'LLC-9H0I1J2K', 'LLC-3L4M5N6O', 'LLC-7P8Q9R0S', 'LLC-1T2U3V4W',
+            'LLC-5X6Y7Z8A', 'LLC-9B0C1D2E', 'LLC-3F4G5H6I', 'LLC-7J8K9L0M',
+            'LLC-1N2O3P4Q', 'LLC-5R6S7T8U', 'LLC-9V0W1X2Y', 'LLC-3Z4A5B6C',
+            'LLC-7D8E9F0G', 'LLC-1H2I3J4K', 'LLC-5L6M7N8O', 'LLC-9P0Q1R2S',
+            'LLC-3T4U5V6W', 'LLC-1A2B3C4D', 'LLC-5E6F7G8H', 'LLC-9I0J1K2L',
+            'LLC-3M4N5O6P', 'LLC-7Q8R9S0T', 'LLC-1U2V3W4X'
+        ];
+
+        foreach ($deviceIds as $deviceId) {
+            Devicename::create(['device_id' => $deviceId]);
+        }
+    }
+}
